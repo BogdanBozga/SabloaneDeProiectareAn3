@@ -5,13 +5,11 @@ import java.util.List;
 
 public class ImageProxy implements Pictures,Element{
     private String url;
-    private Dimension dim;
     private Image realImg;
     public void loadImage() {
         if (realImg == null){
             realImg = new Image(url);
         }
-//        return realImg;
     }
     ImageProxy(String url){
         this.url = url;

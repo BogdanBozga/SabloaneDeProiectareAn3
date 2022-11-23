@@ -19,6 +19,7 @@ public class TableOfContentsVisitor implements Visitor{
 
     public TableOfContents getContents(){
         return contents;
+
     }
     @Override
     public void visitSection(Section section) {

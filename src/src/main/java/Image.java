@@ -5,11 +5,8 @@ import main.java.Element;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class Image implements Element {
+public class Image implements Element,Pictures {
     private String name;
-    private String url;
-//    private ImageContent content;
-
 
     Image(String name) {
         this.name = name;
@@ -24,11 +21,6 @@ public class Image implements Element {
         System.out.println("Image with name: "+name);
     }
 
-
-
-//    public ImageContent content(){
-//        return null;
-//    }
     public void add(Element e){
     }
     public void remove(Element e){
@@ -40,5 +32,10 @@ public class Image implements Element {
     @Override
     public void accept(Visitor visitor) {
         visitor.visitImage(this);
+    }
+
+    @Override
+    public String url() {
+        return null;
     }
 }
