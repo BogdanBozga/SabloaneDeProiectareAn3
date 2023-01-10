@@ -1,10 +1,9 @@
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.uvt.book.controllers.HelloController;
-import org.uvt.book.springbootex.ClientComponent;
-import org.uvt.book.springbootex.SingletonComponent;
-import org.uvt.book.springbootex.TransientComponent;
+import spring.ClientComponent;
+import spring.SingletonComponent;
+import spring.TransientComponent;
 
 @SpringBootApplication
 public class MySpringApplication {

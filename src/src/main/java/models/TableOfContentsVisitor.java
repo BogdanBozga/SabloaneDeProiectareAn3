@@ -1,4 +1,4 @@
-package main.java;
+package models;
 
 public class TableOfContentsVisitor implements Visitor{
     private TableOfContents contents = new TableOfContents();

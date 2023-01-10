@@ -1,7 +1,4 @@
-package main.java;
-
-import java.awt.*;
-import java.util.List;
+package models;
 
 public class ImageProxy implements Pictures,Element{
     private String url;
@@ -11,7 +8,7 @@ public class ImageProxy implements Pictures,Element{
             realImg = new Image(url);
         }
     }
-    ImageProxy(String url){
+    public ImageProxy(String url){
         this.url = url;
     }
 

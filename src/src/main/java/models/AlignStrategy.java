@@ -1,6 +1,4 @@
-package main.java;
-
-import javax.naming.Context;
+package models;
 
 public interface AlignStrategy {
     void render(String text);

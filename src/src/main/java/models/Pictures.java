@@ -1,6 +1,4 @@
-package main.java;
-
-import java.awt.*;
+package models;
 
 public interface Pictures {
     public String url();

@@ -1,4 +1,4 @@
-package main.java;
+package models;
 
 public class Author {
     private String author;

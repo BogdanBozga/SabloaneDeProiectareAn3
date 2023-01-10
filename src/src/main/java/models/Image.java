@@ -1,14 +1,11 @@
-package main.java;
+package models;
 
-import main.java.Element;
-
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Image implements Element,Pictures {
     private String name;
 
-    Image(String name) {
+    public Image(String name) {
         this.name = name;
         try {
             TimeUnit.SECONDS.sleep(5);

@@ -1,4 +1,4 @@
-package main.java;
+package models;
 
 public class Paragraph implements Element{
     private String text;

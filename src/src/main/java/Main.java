@@ -1,4 +1,5 @@
-package main.java;
+import models.*;
+import models.BookStatistics;
 
 public class Main {
 
@@ -33,11 +34,11 @@ public class Main {
         cap1.add(new Paragraph("Some text"));
         cap1.add(new Table("Table 1"));
         BookStatistics stats = new BookStatistics();
-        noapteBuna.accept(stats);
+        noapteBuna.accept((Visitor) stats);
         stats.printStatistics();
-        BookSaveVisitor saveVisitor = new BookSaveVisitor();
-        noapteBuna.accept(saveVisitor);
-        saveVisitor.saveJSON();
+//        BookSaveVisitor saveVisitor = new BookSaveVisitor();
+//        noapteBuna.accept(saveVisitor);
+//        saveVisitor.saveJSON();
 
 
         TableOfContentsVisitor tableVisitor = new TableOfContentsVisitor();

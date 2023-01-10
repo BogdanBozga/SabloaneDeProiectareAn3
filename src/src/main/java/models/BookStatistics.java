@@ -1,4 +1,4 @@
-package main.java;
+package models;
 
 public class BookStatistics implements Visitor {
     private int books = 0;

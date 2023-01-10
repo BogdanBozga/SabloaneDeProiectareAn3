@@ -1,4 +1,4 @@
-package main.java;
+package models;
 
 public interface Visitor {
     void visitBook(Book book);
